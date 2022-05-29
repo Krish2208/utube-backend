@@ -17,7 +17,7 @@ lemma = WordNetLemmatizer()
 corpus = []
 
 model = tensorflow.keras.models.load_model(
-    '.\model_1\\', custom_objects=None, compile=True, options=None
+    './model_1/', custom_objects=None, compile=True, options=None
 )
 
 API_KEY = "AIzaSyCEHPlVs2jxqTIFGNkld8Ve1EXYWzepRM0"
