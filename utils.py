@@ -5,6 +5,9 @@ import nltk
 import numpy as np
 import re
 
+nltk.download('stopwords')
+nltk.download('wordnet')
+
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
