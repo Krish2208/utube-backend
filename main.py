@@ -3,6 +3,7 @@ from flask_cors import CORS
 from utils import getChannelID, getVideoList, GetComment, GetStats, GetSentiment
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route("/videos", methods=['GET'])
 def getVideos():
