@@ -1,1 +1,1 @@
-web: gunicorn main:app -b 127.0.0.1:9000 --timeout 120
+web: gunicorn main:app --timeout 120

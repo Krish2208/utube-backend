@@ -43,4 +43,4 @@ def getComments():
     return jsonify({"comments": comments_sent, "stats": stats, "sentiment_stats": sentiment_stats, "description": description})
 
 if __name__ == "__main__":
-  app.run(debug=True)
+  app.run(debug=True, port=33507)
